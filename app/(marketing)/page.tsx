@@ -3,6 +3,7 @@ import { Medal } from "lucide-react";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 const headingFont = localFont({ src: "../../public/fonts/font.woff2" });
 const textFont = Poppins({
   subsets: ["latin"],
@@ -39,7 +40,7 @@ function MarketingPage() {
         it all with KnowPlan
       </div>
       <Button className="mt-6" size="lg" asChild>
-        <a href="/sign-up">Get Knowplan for free</a>
+        <Link href="/sign-up">Get Knowplan for free</Link>
       </Button>
     </div>
   );
